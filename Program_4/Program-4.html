@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program-4</title>
+</head>
+<body>
+    <input type="text">
+    <button onclick="runScript()">Submit</button>
+    <p></p>
+    <script>
+    function runScript(){
+      var str = document.querySelector('input').value;
+      var num = parseInt(str);
+      if(num){
+        document.querySelector('p').textContent = '';
+        document.querySelector('p').insertAdjacentHTML('beforeend', num.toString().split('').reverse().join(''));
+      } else {
+        str = str.toLowerCase();
+        var arr = str.split('');
+        for(var i=0; i<arr.length; i++){
+          if(arr[i]=='a' || arr[i]=='e' || arr[i]=='i' || arr[i]=='o' || arr[i]=='u'){
+            i++;
+            document.querySelector('p').textContent = '';
+            document.querySelector('p').insertAdjacentHTML('beforeend', 'Input string is: ' +str+ ' Leftmost vowel: ' +arr[i-1]+  ' Position: ' +i);
+            break;
+          }
+        }
+      }
+    }
+    </script>
+</body>
+</html>
