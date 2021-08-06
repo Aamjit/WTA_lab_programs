@@ -2,4 +2,4 @@
 
 Some of the Constraints, Values may need to be updated based on your System configuration and Programs configuration.
 
-Like establishing connection with ApacheServer or MySQL with the actual program.
+Like *hostname*, *portNumber*, *serverName* or *password* in establishing connection with ApacheServer or MySQL with the actual program.
