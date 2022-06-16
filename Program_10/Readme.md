@@ -1,3 +1,6 @@
+![](https://github.com/Aamjit/WTA_lab_programs/blob/main/Program_10/Screenshot%202021-08-03%20235023.png)
+
+
 #### Inorder to execute this Program -
 Download XAAMP https://www.apachefriends.org/download.html - here
 
